@@ -69,3 +69,94 @@ header {
     font-weight: 600;
 
 }
+
+.portada-info {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    color: #000000;
+
+}
+
+#portada {
+    margin-top: 65px;
+    padding: 70px 70px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.bienvenida {
+
+    font-size: 40px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+
+}
+
+.portada-info p {
+    font-size: 14px;
+    width: 70%;
+    color: black;
+    font-weight: bolder;
+}
+
+.portada-info a {
+    font-weight: bolder;
+    color: black;
+    background-color: green;
+    width: 400px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.portada-pizza {
+    width: 300px;
+    padding: 20px;
+}
+
+.portada-img {
+    border-radius: 25px;
+    
+}
+
+#unpocodemuzza {
+    margin-top: 65px;
+    padding: 70px 70px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros {
+
+    font-size: 40px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+
+}
+
+.muzzahistoria p{
+
+    font-size: 14px;
+    width: 70%;
+    color: black;
+    font-weight: bolder;
+
+}
