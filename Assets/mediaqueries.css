@@ -1,0 +1,191 @@
+@media (max-width:992px){
+
+    .navbar {
+        gap: 10px;
+     }
+
+    .navbar-list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background: var(--background);
+        border: 3px solid green;
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+   .navbar-list a {
+        font-size: 18px;
+        
+   } 
+
+   
+   .menu-label {
+
+    display: flex;
+    cursor: pointer;
+    order: 2;
+
+    }
+
+   .menu-label img {
+    height: 20px;
+    width: 25px;
+   }
+
+   .cart-icon {
+    border: 0px solid;
+    height: 45px;
+   }
+
+   #menu-toggle:checked + .navbar-list {
+    display: flex;
+}
+
+    .portada-info{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .bienvenida {
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+    .portada-info p {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .portada-info a {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .portada-pizza{
+        display: none;
+    }
+
+    .nosotros {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .muzzahistoria p {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #info h2 {
+        text-align: center;
+        width: 80%;
+    }
+
+    .info-cards-contenedor {
+        max-width: 80%;
+    }
+
+    #contact-us {
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .pizzeria-container {
+        display: none;
+    }
+
+    .contact-names {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .contact-muzza {
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    .datos-contacto{
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+@media (max-width:576px){
+
+    .carrito {
+        
+        width: 100%;
+        border: none;
+    }
+
+    .carrito-comida {
+        flex-wrap: wrap;
+    }
+
+    .nosotros {
+        font-size:large;
+        font-weight: bolder;
+    }
+    
+    .muzzahistoria p{
+        margin: 70px;
+        width: 70%;
+        height: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-names {
+        margin: 10%;
+        height: 10%;
+       justify-content: center;
+    }
+
+    .contact-muzza {
+        margin: 10%;
+        height: 10%;
+        justify-content: center;
+    }
+
+    .container-footer {
+        width: 110%;
+        height: 110%;
+    }
+    
+}

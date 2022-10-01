@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzeria landing</title>
     <link rel="stylesheet" href="./Assets/styles.css">
+    <link rel="stylesheet" href="./Assets/mediaqueries.css">
 </head>
 <body>
     <header>
@@ -13,6 +14,10 @@
        <img src="./Assets/Images/Logo/logo-muzza1.png" alt="Logo de pizzeria" class="logo">
 
        <nav class="navbar">
+         <label for="menu-toggle" class="menu-label">
+            <img src="./Assets/Images/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png" class="menu-icon">
+        </label>
+        <input type="checkbox" id="menu-toggle"> 
 
         <ul class="navbar-list">
             <li><a href="#">Home</a></li>
@@ -23,7 +28,140 @@
         </ul>
         
        </nav> 
+
+       <label for="cart-toggle" class="cart-label">
+
        <img src="./Assets/Images/19.-Carrito-de-compras.png" alt="carrito de compras" class="cart-icon">
+        
+       </label>
+
+       <input type="checkbox" id="cart-toggle">
+
+
+       <div class="carrito">
+            <h2>Muzza Menu</h2>
+            <div class="carrito-comida">
+                <img src="./Assets/Images/Comida/pizza-de-jamon-queso-y-tocino.webp" alt="pizzaqueso">
+                <div class="comida-precio">
+                    <h3 class="item-title">Pizza de queso</h3>
+                    <p class="food-bid">Precio</p>
+                    <span class="food-price">15 USD</span>
+                </div>
+                <div class="item-handler">
+
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                    
+                </div>
+            </div>
+
+            <div class="carrito-comida">
+                <img src="./Assets/Images/Comida/pizza_napolitana_napoletana.webp" alt="pizzanapo">
+                <div class="comida-precio">
+                    <h3 class="item-title">Pizza Napolitana</h3>
+                    <p class="food-bid">Precio</p>
+                    <span class="food-price">15 USD</span>
+                </div>
+                <div class="item-handler">
+
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                    
+                </div>
+            </div>
+
+            <div class="carrito-comida">
+                <img src="./Assets/Images/Comida/panceta pizza.jpg" alt="pizzapanceta">
+                <div class="comida-precio">
+                    <h3 class="item-title">Pizza con panceta</h3>
+                    <p class="food-bid">Precio</p>
+                    <span class="food-price">15 USD</span>
+                </div>
+                <div class="item-handler">
+
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                    
+                </div>
+            </div>
+
+            <div class="carrito-comida">
+                <img src="./Assets/Images/Comida/Fugazzeta.jpg" alt="pizzafugasseta">
+                <div class="comida-precio">
+                    <h3 class="item-title">Pizza Fugasseta</h3>
+                    <p class="food-bid">Precio</p>
+                    <span class="food-price">15 USD</span>
+                </div>
+                <div class="item-handler">
+
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                    
+                </div>
+            </div>
+
+            <div class="carrito-comida">
+                <img src="./Assets/Images/Comida/palmito.jpg" alt="pizzapalmito">
+                <div class="comida-precio">
+                    <h3 class="item-title">Pizza de palmito</h3>
+                    <p class="food-bid">Precio</p>
+                    <span class="food-price">15 USD</span>
+                </div>
+                <div class="item-handler">
+
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                    
+                </div>
+            </div>
+
+            <div class="carrito-comida">
+                <img src="./Assets/Images/Comida/pizza-vegetariana-m.jpg.webp" alt="pizzavegetariana">
+                <div class="comida-precio">
+                    <h3 class="item-title">Pizza Veggie</h3>
+                    <p class="food-bid">Precio</p>
+                    <span class="food-price">15 USD</span>
+                </div>
+                <div class="item-handler">
+
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                    
+                </div>
+            </div>
+
+            <div class="carrito-comida">
+                <img src="./Assets/Images/Comida/pizza-de-salmon-848.jpg" alt="pizzadesalmon">
+                <div class="comida-precio">
+                    <h3 class="item-title">Pizza de salmon</h3>
+                    <p class="food-bid">Precio</p>
+                    <span class="food-price">15 USD</span>
+                </div>
+                <div class="item-handler">
+
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                    
+                </div>
+            </div>
+
+
+            <span class="divider"></span>
+            <div class="cart-total">
+                <p>Total</p>
+                <span>30 USD</span>
+            </div>
+
+            <button class="btn-add transition">Comprar</button>
+
+       </div>
 
     </header>
 
@@ -45,9 +183,9 @@
 
                 </p>
                     
-                <a href="#">¡Estoy listo para ordenar!</a>
+                <a href="#" class="transition">¡Estoy listo para ordenar!</a>
 
-                <a href="#unpocodemuzza">Aprende mas sobre Muzza</a>
+                <a href="#unpocodemuzza" class="transition">Aprende mas sobre Muzza</a>
                 
 
             </div>
@@ -77,8 +215,119 @@
 
         </section>
 
-    </main>
+        <section id="info">
 
+            <h2>En muzza contamos con diversos servicios para poder hacer que tu experiencia con nostros sea la mejor.</h2>
+
+            <div class="info-cards-contenedor">
+
+                <div class="info-card">
+                    <img src="./Assets/Images/Cards/ae782cab8ae7e722febb5869c09574cc-feliz-personaje-de-repartidor.png" 
+                    alt="delivery">
+
+                    <h3>Llevamos tu pedido a casa</h3>
+
+                    <p>Si no puedes venir a muzza, muzza ira a ti.
+                        Ofrecemos servicio de delivery para el confort de 
+                        nuestros clientes.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <img src="./Assets/Images/Cards/129421d4a10b5133fae22d4dbcf346fe.png"  alt="tarjeta debito y credito">
+
+                    <h3>Multiples medios de pago</h3>
+
+                    <p>Aceptamos distintos medios pago, desde tarjeta de credito,
+                        debito, billeteras virtuales y efectivo.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <img src="./Assets/Images/Cards/5998422.png" alt="descuentos">
+                    
+                    <h3>Promociones y descuentos todos los dias</h3>
+
+                    <p>Disfrutra de diversas promociones y descuentos todos los dias.</p>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section>
+
+            <div class="pizzeria-container">
     
+                <img src="./Assets/Images/pizzeria.jpg" alt="pizzeria" class="pizzeria">
+
+            </div>
+
+
+            <section id="contact-us">
+
+                <h2>Contac US</h2>
+                
+                <div class="contact-names">
+    
+    
+                    <h3>Jupiter, Australia</h3>
+    
+                    <h3>Papadopoulos Paleta</h3>
+    
+                    
+                </div>
+
+                <div class="contact-muzza">
+                    
+                    <div class="datos-contacto">
+    
+                        
+                        <img src="./Assets/Images/location_icon-icons.com_50109.png" alt="email" class="icono">
+                           
+                        <span class="pepe">Calle falsa 123</span>
+                        
+    
+                        <img src="./Assets/Images/location_icon-icons.com_50109.png" alt="email" class="icono">
+                        <span>Calle falsa 123</span>
+    
+                    </div>
+    
+                    <div class="datos-contacto">
+                        
+                        <img src="./Assets/Images/email icono.png" alt="email" class="icono">
+                        <span>mail@mail.com</span>
+    
+    
+                        <img src="./Assets/Images/email icono.png" alt="email" class="icono">
+                        <span>mail@mail.com</span>
+    
+                    </div>
+    
+                    <div class="datos-contacto">
+    
+                        <img src="./Assets/Images/phone_icon_136322.png" alt="email" class="icono">
+                        <span>011 12121212</span>
+
+                        <img src="./Assets/Images/phone_icon_136322.png" alt="email" class="icono">
+                        <span>011 12121212</span>
+    
+                    </div>
+                    
+                </div>
+
+         </section>
+        
+        </main>
+
+    <footer>
+        <div class="container-footer">
+            <img src="./Assets/Images/Logo/logo-muzza1.png" alt="muzzalogo" class="logofooter">
+        </div>
+    </footer>
 </body>
 </html>
